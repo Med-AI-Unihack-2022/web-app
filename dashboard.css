@@ -169,6 +169,14 @@ body {
   /*justify-content: center;*/
 }
 
+#prescribe_medicine_form{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  height:100%;
+  /*justify-content: center;*/
+}
+
 
 .general_record_form_inputContainer{
   display: flex;
@@ -219,21 +227,189 @@ body {
   background: #E8EA8E;
 }
 
+/*submit button*/
 #gr_form_11{
-  margin-left: 15px;
-  margin-right: 15px;
-  border: 2px solid #007FFF;
-  color: white;
-  background: #007FFF;
-  border-radius: 8px;
+  /*margin-left: 15px;*/
+  /*margin-right: 15px;*/
+  /*border: 2px solid #007FFF;*/
+  /*color: white;*/
+  /*background: #007FFF;*/
+  /*border-radius: 8px;*/
+
+    margin-left: 250px;
+    margin-right: 15px;
+    align-items: left;
+    border: 2px solid #007FFF;
+    color: white;
+    background: #007FFF;
+    border-radius: 8px;
 }
 
 #ld_1{
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+}
+
+#ld_2{
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+#specialist_record_form{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  height:100%;
+}
+
+
+#sr_dashboard_body{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 }
+
+.class_sr{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.input{
+  align-items: left;
+}
+
+#sr_form{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sr_form_16{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+#sr_form_16d{
+
+  width: 265px;
+  height: 289px;
+  left: 824px;
+  top: 354px;
+  background: #E8EA8E;
+}
+
+#sr_form_16c{
+    border: 5px;
+  border-color:black;
+}
+
+#text_1{
+  font-weight: bold;
+  padding: 10px;
+}
+
+#sr_form_16b{
+  font-weight: bold;
+}
+#sr_form_17{
+    margin-left: 250px;
+    margin-right: 15px;
+    align-items:left;
+    border: 2px solid #007FFF;
+    color: white;
+    background: #007FFF;
+    border-radius: 8px;
+
+}
+
+#pm_body{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#pm_form_8{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:15px;
+}
+
+#pm_form_9{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:15px;
+}
+
+#daily{
+  margin-left:auto;
+}
+
+#morning{
+  margin-left:auto;
+}
+
+
+
+
+
+#pm_form_10b{
+  font-weight: bold;
+}
+
+
+
+#pm_form_10c{
+  border: 5px;
+  border-color:black;
+}
+
+#pm_form_10d{
+  width: 265px;
+  height: 289px;
+  left: 824px;
+  top: 354px;
+  background: #E8EA8E;
+  margin-bottom: 20px;
+}
+
+#pm_form_11{
+    margin-left: 250px;
+    margin-right: 15px;
+    align-items: left;
+    border: 2px solid #007FFF;
+    color: white;
+    background: #007FFF;
+    border-radius: 8px;
+}
+
+
+#pm_form_10{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:15px;
+}
+
+
 
 /*ALL CODE BEFORE THIS LINE-----------------------------------------------------------------*/
 /*html, body {*/
