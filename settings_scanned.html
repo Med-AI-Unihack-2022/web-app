@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en"  id = "dashboard">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="dashboard.css">
+        </head>
+        <body>
+        <div id ="dashboard_page">
+            <div id = "dashboard_bar">
+
+                <img  id = "dashboard_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110"/>
+
+                <span class = "class_2" id = "dashboard_calendar"><text>Today is <b id = "dates"></b></text></span>
+
+                <img class = "class_2" id = "dashboard_calendar_icon" src="/images/Calendar.png" alt="Calendar_Logo" width="30" height="30"/>
+
+                <img class = "class_2" id = "dashboard_bell" src="/images/notification_icon.png" alt="notification_bell_Logo" width="30" height="30"/>
+
+                <img class = "class_2" id = "dashboard_avatar_profile" src="/images/profile.png" alt="avatar_profile_Logo" width="30" height="30" />
+                <button   id = "dashboard_profile_button"  type="button" >Hi UNIHACK</button>
+
+            </div>
+
+            <div id= "dashboard_body">
+               <div id ="sidebar">
+
+                    <h1 id="H_r_u">HOW ARE YOU TODAY?</h1>
+
+                    <!--<div class="space_sidebar">-->
+                        <div class="side_bar_class" onclick="window.location.href = 'dashboard_scanned.html';">
+                            <img class = "class_3a" id = "dashboard_icon" src="/images/dashboard_icon.png" alt="dashboard_icon" width="30" height="30"/>
+                            <text class = "class_3"  >Dashboard</text>
+                        </div>
+
+                         <div class="side_bar_class" onclick="window.location.href = 'general_record.html';">
+                            <img class = "class_3a" id = "general_icon" src="/images/general_icon.png" alt="general_icon" width="30" height="30"/>
+                            <text class = "class_3"   >General Record</text>
+                         </div>
+
+                         <div class="side_bar_class" onclick="window.location.href = 'specialist_record.html';">
+                            <img class = "class_3a" id = "specialist_icon" src="/images/specialist_icon.png" alt="specialist_icon" width="30" height="30"/>
+                            <text class = "class_3"   >Specialist Record</text>
+                         </div>
+
+                         <div class="side_bar_class" onclick="window.location.href = 'prescribe_medication.html';">
+                            <img class = "class_3a" id = "medication_icon" src="/images/medication_icon.png" alt="medication_icon" width="30" height="30"/>
+                            <text class = "class_3"   >Prescribe Medication</text>
+                         </div>
+
+                         <div class="side_bar_class_active" onclick="window.location.href = 'settings_scanned.html';">
+                            <img class = "class_3a" id = "setting_icon" src="/images/setting_icon.png" alt="setting_icon" width="30" height="30"/>
+                            <text class = "class_3"  >Settings</text>
+                         </div>
+
+                         <div class="side_bar_class" onclick="window.location.href = 'landing_page.html';">
+                            <img class = "class_3a" id = "logout_icon" src="/images/logout_icon.png" alt="logout_icon" width="30" height="30"/>
+                            <text class = "class_3"  >Log Out</text>
+                         </div>
+                     <!--</div>-->
+                </div>
+            </div>
+
+            <!--<div id = "dashboard_footer">-->
+
+            <!--</div>-->
+            <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("dates").innerHTML = day + "/" + month + "/" + year;
+            </script>
+
+        </div>
+        </body>
+    </html>

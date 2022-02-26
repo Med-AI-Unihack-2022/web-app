@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en"  id = "login">
+        <head>
+             <meta charset="UTF-8">
+             <link rel="stylesheet" type="text/css" href="login.css">
+        </head>
+        <body>
+        <div id ="login_page">
+            <div id = "login_bar">
+
+              <img id = "login_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110"/>
+
+                <a class ="class_1" id = "login_home" href="landing_page.html">Home</a>
+                <a class ="class_1" id = "login_download" href="url">Download</a>
+                <a class ="class_1" id = "login_aboutus" href="url">About us</a>
+                <a class ="class_1" id = "login_contact" href="url">Contact</a>
+                <button id = "login_bar_button"  type="button"  onclick="window.location.href = 'login.html';">LOG IN</button>
+                <button id = "signup_bar_button"  type="button" >SIGN UP</button>
+
+            </div>
+
+
+            <div id= "log_in_body">
+
+              <div id ="log_in_box">
+
+                    <!--<button id = "Goolge_login_box_button"  type="button">-->
+                    <!--    <img id = "Google_icon" src="/images/google_icon.png"/>-->
+                    <!--    Log in with Google-->
+                    <!--</button>-->
+
+                    <!--<text id="or_log_in_box">or</text>-->
+
+                    <h1 id="LOGIN_log_in_box">LOGIN</h1>
+
+
+                    <form action="" class="form" onsubmit="log_in();return false">
+
+                      <div class="inputContainer">
+                        <input type="text" class="input" placeholder="Email" required id="log_in_email">
+                        <!--<label for="" class="label">Email</label>-->
+                      </div>
+
+                      <div class="inputContainer">
+                        <input type="password" class="input" placeholder="Password" required id="log_in_password">
+                        <!--<label for="" class="label">Password</label>-->
+                      </div>
+
+                      <input type="submit" class="submitBtn" value="LOG IN">
+                    </form>
+              </div>
+              <text>   </text>
+              <div id = "div_main_logo">
+                   <img id = "login_main_img" src="/images/web_login_page.png" width="743" height="629"/>
+              </div>
+            </div>
+        </div>
+        <script src="dashboard.js"></script>
+        </body>
+    </html>
