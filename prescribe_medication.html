@@ -21,8 +21,8 @@
 
             </div>
 
-            <div id= "dashboard_body">
-               <div id ="sidebar">
+            <div  id= "general_record_body">
+               <div id ="sidebar" >
 
                     <h1 id="H_r_u">HOW ARE YOU TODAY?</h1>
 
@@ -58,6 +58,98 @@
                          </div>
                      <!--</div>-->
                 </div>
+
+                <div style = "display:block" id="prescribe_medicine_form">
+                    <span id="PRESCRIBE_MEDICATION"><h1>PRESCRIBE MEDICATION</h1></span>
+                    <form action="" id="pm_form" class="form" onsubmit="add_medication();return false">
+                          <div id= "pm_form_1" class="general_record_form_inputContainer">
+                            <label id= "pm_form_1a" for="" class="label">Date:</label>
+                            <input id= "pm_form_1b" type="text" class="input" placeholder="xx/xx/xx">
+                          </div>
+
+                          <div id= "pm_form_2" class="general_record_form_inputContainer">
+                            <label id= "pm_form_2a" for="" class="label">Doctor:</label>
+                            <input id= "pm_form_2b" type="text" class="input" placeholder="Dr.X">
+                          </div>
+
+                          <div id= "pm_form_3" class="general_record_form_inputContainer">
+                            <label id= "pm_form_3a" for="" class="label">Name:</label>
+                            <input id= "pm_form_3b" type="text" class="input" placeholder="UNIHACK">
+                          </div>
+
+                          <div id= "pm_form_4" class="general_record_form_inputContainer">
+                            <label id= "pm_form_4a" for="" class="label">Age:</label>
+                            <input id= "pm_form_4b" type="text" class="input" placeholder="22">
+                          </div>
+
+                          <div id= "pm_form_5" class="general_record_form_inputContainer">
+                             <label id= "pm_form_5a" for="" class="label">Sex:</label>
+                             <input id= "pm_form_5b" type="text" class="input" placeholder="Male">
+                          </div>
+
+                             <div id= "pm_form_6" class="general_record_form_inputContainer">
+                                <label id= "pm_form_6a" for="" class="label">Medicine Name:</label>
+                                <input id= "pm_form_6b" type="text" class="input" placeholder="UNIHACK" id="med_name">
+                             </div>
+
+                             <div id= "pm_form_7" class="general_record_form_inputContainer">
+                                <label id= "pm_form_7a" for="" class="label">Rotation:</label>
+                                <input id= "pm_form_7b" type="text" class="input" placeholder="0" id="med_rotation">
+                             </div>
+
+                             <div id= "pm_form_8">
+                                 <p  id= "pm_form_8a">Frequency:  </p>
+                                 <input id="daily" type="radio"  name="frequency" value="Daily">
+                                 <label id= "pm_form_8b" for="Daily">Daily</label><br>
+
+                                 <input id="dual" type="radio"  name="frequency" value="Dual">
+                                 <label id= "pm_form_8c" for="Dual">Dual</label><br>
+
+                                 <input id="weekly" type="radio"  name="frequency" value="Weekly">
+                                 <label id= "pm_form_8d" for="Weekly">Weekly</label><br>
+                             </div>
+
+                             <div id= "pm_form_9">
+                                 <p id= "pm_form_9a" for="" class="label">Timing:  </p>
+                                 <input type="radio" id="morning" name="timing" value="Morning">
+                                 <label id= "pm_form_9b" for="Morning">Morning</label><br>
+
+                                 <input type="radio" id="noon" name="timing" value="Noon">
+                                 <label id= "pm_form_9c" for="Noon">Noon</label><br>
+
+                                 <input type="radio" id="evening" name="timing" value="Evening">
+                                 <label id= "pm_form_9d" for="Evening">Evening</label><br>
+                             </div>
+                             <div id= "pm_form_10">
+                                  <div id= "pm_form_10a">
+                                      <label id= "pm_form_10b">Note:</label>
+                                  </div>
+
+                                  <div id= "pm_form_10c">
+                                      <input id= "pm_form_10d" class="w3-input" type="text" >
+                                  </div>
+                              </div>
+                          <input id="pm_form_11" type="submit" class="submitBtn" value="SIGN UP">
+                    </form>
+                </div>
+
+                <div style = "display:none" id="add_medication_form" onsubmit="add_medication_again();return false">
+                     <span id="GENERAL_RECORD"><h1>ADD MORE?</h1></span>
+                     <form action="" class="form" id="gr_form">
+                          <input id= "gr_form_12" type="submit" class="submitBtn" value="Yes">
+                     </form>
+                </div>
+
+                <div>
+                    <text></text>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                </div>
+
             </div>
 
             <!--<div id = "dashboard_footer">-->
@@ -70,6 +162,7 @@
                 day = date.getDate();
                 document.getElementById("dates").innerHTML = day + "/" + month + "/" + year;
             </script>
+            <script src="dashboard.js"></script>
 
         </div>
         </body>

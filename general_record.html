@@ -59,10 +59,10 @@
                      <!--</div>-->
                 </div>
 
-               
-                <div id="general_record_form">
+
+                <div style = "display:block" id="general_record_form">
                      <span id="GENERAL_RECORD"><h1>GENERAL RECORD</h1></span>
-                     <form action="" class="form" id="gr_form">
+                     <form action="" class="form" id="gr_form" onsubmit="add_general_record();return false">
 
                           <div id= "gr_form_1" class="general_record_form_inputContainer">
                             <label id= "gr_form_1a" for="" class="label">Date:</label>
@@ -147,11 +147,21 @@
                           </div>
                           <input id= "gr_form_11" type="submit" class="submitBtn" value="SUBMIT">
                      </form>
-                     
+
 
                 </div>
-                
-                <div> 
+
+
+                <div style = "display:none" id="add_general_record_form" onsubmit="add_general_record_again();return false">
+                     <span id="GENERAL_RECORD"><h1>ADD MORE?</h1></span>
+                     <form action="" class="form" id="gr_form">
+                          <input id= "gr_form_12" type="submit" class="submitBtn" value="Yes">
+                     </form>
+                </div>
+
+
+
+                <div>
                     <text></text>
                          <br>
                          <br>
@@ -160,10 +170,10 @@
                          <br>
                          <br>
                 </div>
-                
+
             </div>
 
-           
+
             <!--</div>-->
             <script>
                 date = new Date();
@@ -172,6 +182,7 @@
                 day = date.getDate();
                 document.getElementById("dates").innerHTML = day + "/" + month + "/" + year;
             </script>
+            <script src="dashboard.js"></script>
 
         </div>
         </body>

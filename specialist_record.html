@@ -21,7 +21,7 @@
 
             </div>
 
-            <div id= "dashboard_body">
+            <div id= "general_record_body">
                <div id ="sidebar">
 
                     <h1 id="H_r_u">HOW ARE YOU TODAY?</h1>
@@ -59,14 +59,156 @@
                      <!--</div>-->
                 </div>
 
-                <div>
+
+                <div style = "display:block" id="specialist_record_form">
+                    <span id="SPECIALIST_RECORD"><h1>SPECIALIST RECORD</h1></span>
+                    <form onsubmit="add_specialist_record();return false">
+
+                              <div id= "sr_form_d" class="class_sr">
+                                <label id= "sr_form_da" for="" class="label">Date:</label>
+                                <input id= "sr_form_db" type="text" class="input" placeholder="xx/xx/xx">
+                              </div>
+
+                              <div id= "sr_form_r" class="class_sr">
+                                <label id= "sr_form_ra" for="" class="label">Doctor:</label>
+                                <input id= "sr_form_rb" type="text" class="input" placeholder="Dr.X">
+                              </div>
+
+                              <div id= "sr_form_n" class="class_sr">
+                                <label id= "sr_form_na" for="" class="label">Name:</label>
+                                <input id= "sr_form_nb" type="text" class="input" placeholder="UNIHACK">
+                              </div>
+
+                              <div id= "sr_form_a" class="class_sr">
+                                <label id= "sr_form_aa" for="" class="label">Age:</label>
+                                <input id= "sr_form_ab" type="text" class="input" placeholder="22">
+                              </div>
+
+                              <div id= "sr_form_s" class="class_sr">
+                                 <label id= "sr_form_sa" for="" class="label">Sex:</label>
+                                 <input id= "sr_form_sb" type="text" class="input" placeholder="Male">
+                              </div>
+                            <div id="text_1">
+                                Select diagnosis:
+                            </div>
+                            <div id= "sr_form" >
+
+                               <div id= "COL_1">
+                                   <div id= "sr_form_1" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_1a" type="checkbox"  name="Atelectasis" value="Atelectasis">
+                                       <label  id= "sr_form_1b" for="Atelectasis">Atelectasis</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_2" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_2a" type="checkbox"  name="Infliltration" value="Infliltration">
+                                       <label  id= "sr_form_2b" for="Infliltration">Infliltration</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_3" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_3a" type="checkbox"  name="Emphysema" value="Emphysema">
+                                       <label  id= "sr_form_3b" for="Emphysema">Emphysema</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_4" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_4a" type="checkbox"  name="Pleural thickening" value="Pleural thickening">
+                                       <label  id= "sr_form_4b" for="Pleural thickening">Pleural thickening</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_5" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_5a" type="checkbox"  name="Nodule" value="Nodule">
+                                       <label  id= "sr_form_5b" for="Nodule">Nodule</label><br>
+                                   </div>
+                               </div>
 
 
+                               <div id= "COL_2">
+                                   <div id= "sr_form_6" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_6a" type="checkbox"  name="Consolidation" value="Consolidation">
+                                       <label  id= "sr_form_6b" for="Consolidation">Consolidation</label><br>
+                                   </div>
 
-                WRITE YOU CODE HERE
+                                   <div id= "sr_form_7" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_7a" type="checkbox"  name="Pneumothorax" value="Pneumothorax">
+                                       <label  id= "sr_form_7b" for="Pneumothorax">Pneumothorax</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_8" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_8a" type="checkbox"  name="Fibrosis" value="Fibrosis">
+                                       <label  id= "sr_form_8b" for="Fibrosis">Fibrosis</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_9" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_9a" type="checkbox"  name="Cardiomegaly" value="Cardiomegaly">
+                                       <label  id= "sr_form_9b" for="Cardiomegaly">Cardiomegaly</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_10" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_10a" type="checkbox"  name="Hernia" value="Hernia">
+                                       <label  id= "sr_form_10b" for="Hernia">Hernia</label><br>
+                                   </div>
+                               </div>
 
 
+                               <div id= "COL_3">
+                                   <div id= "sr_form_11" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_11a" type="checkbox"  name="Effusion" value="Effusion">
+                                       <label  id= "sr_form_11b" for="Effusion">Effusion</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_12" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_12a" type="checkbox"  name="Edema" value="Edema">
+                                       <label  id= "sr_form_12b" for="Edema">Edema</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_13" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_13a" type="checkbox"  name="Pneumonia" value="Pneumonia">
+                                       <label  id= "sr_form_13b" for="Pneumonia">Pneumonia</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_14" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_14a" type="checkbox"  name="Carcinoma" value="Carcinoma">
+                                       <label  id= "sr_form_14b" for="Carcinoma">Carcinoma</label><br>
+                                   </div>
+
+                                   <div id= "sr_form_15" class="specialist_record_form_inputContainer">
+                                       <input id= "sr_form_15a" type="checkbox"  name="Normal" value="Normal">
+                                       <label  id= "sr_form_15b" for="Normal">Normal</label><br>
+                                   </div>
+                               </div>
+                        </div>
+
+                                <div id= "sr_form_16">
+                                    <div id = "sr_form_16a">
+                                        <label id= "sr_form_16b">Note:</label>
+                                    </div>
+
+                                    <div id= "sr_form_16c">
+                                          <input id= "sr_form_16d" class="w3-input" type="text" >
+                                    </div>
+                                </div>
+
+                                <input id= "sr_form_17" type="submit" class="submitBtn" value="SUBMIT">
+
+                    </form>
                 </div>
+                <div style = "display:none" id="add_specialist_record_form" onsubmit="add_specialist_record_again();return false">
+                     <span id="GENERAL_RECORD"><h1>ADD MORE?</h1></span>
+                     <form action="" class="form" id="gr_form">
+                          <input id= "sr_form_17" type="submit" class="submitBtn" value="Yes">
+                     </form>
+                </div>
+
+                <div>
+                    <text></text>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                </div>
+
+
 
             </div>
 
@@ -80,6 +222,7 @@
                 day = date.getDate();
                 document.getElementById("dates").innerHTML = day + "/" + month + "/" + year;
             </script>
+            <script src="dashboard.js"></script>
 
         </div>
         </body>
