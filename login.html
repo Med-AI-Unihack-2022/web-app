@@ -37,17 +37,39 @@
                     <form action="" class="form" onsubmit="log_in();return false">
 
                       <div class="inputContainer">
-                        <input type="text" class="input" placeholder="Email" required id="log_in_email">
-                        <!--<label for="" class="label">Email</label>-->
-                      </div>
-
-                      <div class="inputContainer">
-                        <input type="password" class="input" placeholder="Password" required id="log_in_password">
-                        <!--<label for="" class="label">Password</label>-->
-                      </div>
-
-                      <input type="submit" class="submitBtn" value="LOG IN">
-                    </form>
+                        <input type="email" class="input" placeholder="your_email@example.com" pattern="[@]" required>
+                        <label for="" class="label">Email</label>
+                    </div>
+    
+                    <!-- <span role="alert" id="emailError" aria-hidden="true">
+                    Please enter your email
+                    </span> -->
+    
+                    <div class="inputContainer">
+                        <input type="text" class="input" placeholder="Your Name" required>
+                        <label for="" class="label">Username</label>
+                    </div>
+    
+                    <div class="inputContainer">
+                        <input type="text" class="input" placeholder="Password" required>
+                        <label for="" class="label">Password</label>
+                    </div>
+    
+                    
+    
+                    <div>
+                        <input type="checkbox" class="btn-check" id="btn-remember" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btn-remember">Remember me</label>
+    
+                        
+                    </div>
+                    <a class= "link" href="signup.html">Don't have an account? Please sign up here.</a>
+    
+    
+    
+                    <input type="submit" class="submitBtn" value="Sign up">
+                </form>
+                    
               </div>
               <text>   </text>
               <div id = "div_main_logo">

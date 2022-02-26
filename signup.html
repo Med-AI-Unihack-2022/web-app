@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-    <html lang="en"  id = "signup">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="signup.css">
-    </head>
-    <body>
-        <div id = "login_bar">
+<html lang="en" id="signup">
 
-            <img id = "login_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110"/>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
 
-              <a class ="class_1" id = "login_home" href="landing_page.html">Home</a>
-              <a class ="class_1" id = "login_download" href="url">Download</a>
-              <a class ="class_1" id = "login_aboutus" href="url">About us</a>
-              <a class ="class_1" id = "login_contact" href="url">Contact</a>
-              <button id = "login_bar_button"  type="button"  onclick="window.location.href = 'login.html';">LOG IN</button>
-              <button id = "signup_bar_button"  type="button" onclick="window.location.href = 'signup.html';" >SIGN UP</button>
+<body>
+    <div id="signup_page"></div>
+    <div id="signup_bar">
 
-          </div>
+        <img id="signup_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110" />
 
-        <div class="signupFrm">
-            <form action="" class="form">
-                <h1 class="title">Sign up</h1>
+        <a class="class_1" id="signup_home" href="landing_page.html">Home</a>
+        <a class="class_1" id="signup_download" href="url">Download</a>
+        <a class="class_1" id="signup_aboutus" href="url">About us</a>
+        <a class="class_1" id="signup_contact" href="url">Contact</a>
+        <button id="login_bar_button" type="button" onclick="window.location.href = 'login.html';">LOG IN</button>
+        <button id="signup_bar_button" type="button" onclick="window.location.href = 'signup.html';">SIGN UP</button>
 
+    </div>
+
+    <div id="signup_body">
+
+        <div class="signupFrm" id="signup_box">
+
+            
+
+
+            <form action="" class="form" onsubmit="signup();return false">
+                <h1 class="title" id="SIGNUP_signup_box">SIGN UP</h1>
                 <div class="inputContainer">
                     <input type="email" class="input" placeholder="your_email@example.com" pattern="[@]" required>
                     <label for="" class="label">Email</label>
                 </div>
 
                 <!-- <span role="alert" id="emailError" aria-hidden="true">
-              Please enter your email
-            </span> -->
+                Please enter your email
+                </span> -->
 
                 <div class="inputContainer">
                     <input type="text" class="input" placeholder="Your Name" required>
@@ -50,8 +58,10 @@
                     <input type="checkbox" class="btn-check" id="btn-remember" autocomplete="off">
                     <label class="btn btn-outline-primary" for="btn-remember">Remember me</label>
 
-                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                    
                 </div>
+
+                <a class= "link" href="login.html">Already got an account? Please log in here.</a>
 
 
 
@@ -60,5 +70,6 @@
         </div>
 
 
-    </body>
-    </html>
+</body>
+
+</html>
