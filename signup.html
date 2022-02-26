@@ -1,75 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" id="signup">
+    <html lang="en"  id = "login">
+        <head>
+             <meta charset="UTF-8">
+             <link rel="stylesheet" type="text/css" href="login.css">
+        </head>
+        <body>
+        <div id ="login_page">
+            <div id = "login_bar">
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="signup.css">
-</head>
+              <img id = "login_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110"/>
 
-<body>
-    <div id="signup_page"></div>
-    <div id="signup_bar">
+                <a class ="class_1" id = "login_home" href="landing_page.html">Home</a>
+                <a class ="class_1" id = "login_download" href="landing_page.html">Download</a>
+                <a class ="class_1" id = "login_aboutus" href="landing_page.html">About us</a>
+                <a class ="class_1" id = "login_contact" href="landing_page.html">Contact</a>
+                <button id = "login_bar_button"  type="button"  onclick="window.location.href = 'login.html';">LOG IN</button>
+                <button id = "signup_bar_button"  type="button" onclick="window.location.href = 'signup.html';">SIGN UP</button>
 
-        <img id="signup_bar_logo" src="/images/MEDBUDDY.png" alt="MEDBUDDY_Logo" width="110" height="110" />
-
-        <a class="class_1" id="signup_home" href="landing_page.html">Home</a>
-        <a class="class_1" id="signup_download" href="url">Download</a>
-        <a class="class_1" id="signup_aboutus" href="url">About us</a>
-        <a class="class_1" id="signup_contact" href="url">Contact</a>
-        <button id="login_bar_button" type="button" onclick="window.location.href = 'login.html';">LOG IN</button>
-        <button id="signup_bar_button" type="button" onclick="window.location.href = 'signup.html';">SIGN UP</button>
-
-    </div>
-
-    <div id="signup_body">
-
-        <div class="signupFrm" id="signup_box">
-
-            
+            </div>
 
 
-            <form action="" class="form" onsubmit="signup();return false">
-                <h1 class="title" id="SIGNUP_signup_box">SIGN UP</h1>
-                <div class="inputContainer">
-                    <input type="email" class="input" placeholder="your_email@example.com" pattern="[@]" required>
-                    <label for="" class="label">Email</label>
-                </div>
+            <div id= "log_in_body">
 
-                <!-- <span role="alert" id="emailError" aria-hidden="true">
-                Please enter your email
-                </span> -->
+              <div id ="log_in_box">
 
-                <div class="inputContainer">
-                    <input type="text" class="input" placeholder="Your Name" required>
-                    <label for="" class="label">Username</label>
-                </div>
+                    <!--<button id = "Goolge_login_box_button"  type="button">-->
+                    <!--    <img id = "Google_icon" src="/images/google_icon.png"/>-->
+                    <!--    Log in with Google-->
+                    <!--</button>-->
 
-                <div class="inputContainer">
-                    <input type="text" class="input" placeholder="Password" required>
-                    <label for="" class="label">Password</label>
-                </div>
+                    <!--<text id="or_log_in_box">or</text>-->
 
-                <div class="inputContainer">
-                    <input type="text" class="input" placeholder="Confirm Password" required>
-                    <label for="" class="label">Confirm Password</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" class="btn-check" id="btn-remember" autocomplete="off">
-                    <label class="btn btn-outline-primary" for="btn-remember">Remember me</label>
-
-                    
-                </div>
-
-                <a class= "link" href="login.html">Already got an account? Please log in here.</a>
+                    <h1 id="LOGIN_log_in_box">SIGN UP</h1>
 
 
+                    <form action="" class="form" onsubmit="sign_up();return false">
 
-                <input type="submit" class="submitBtn" value="Sign up">
-            </form>
+                      <div class="inputContainer">
+                        <input type="text" class="input" placeholder="Name" required id="sign_in_name">
+                        <!--<label for="" class="label">Email</label>-->
+                      </div>
+
+                      <div class="inputContainer">
+                        <input type="text" class="input" placeholder="Email" required id="sign_in_email">
+                        <!--<label for="" class="label">Email</label>-->
+                      </div>
+
+                      <div class="inputContainer">
+                        <input type="password" class="input" placeholder="Password" required id="sign_in_password">
+                        <!--<label for="" class="label">Password</label>-->
+                      </div>
+
+                      <div class="inputContainer">
+                        <input type="password" class="input" placeholder="Confirm Password" required id="sign_in_password_confirm">
+                        <!--<label for="" class="label">Password</label>-->
+                      </div>
+
+                      <input type="submit" class="submitBtn" value="SIGN UP">
+                    </form>
+              </div>
+              <text>   </text>
+              <div id = "div_main_logo">
+                   <img id = "login_main_img" src="/images/web_login_page.png" width="743" height="629"/>
+              </div>
+            </div>
         </div>
-
-
-</body>
-
-</html>
+        <script src="dashboard.js"></script>
+        </body>
+    </html>
