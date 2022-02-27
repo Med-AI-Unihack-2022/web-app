@@ -86,7 +86,7 @@ body {
 }
 
 .submitBtn:hover {
-  background-color: #007FFF;
+  background-color: #1568bb;
   transform: translateY(-2px);
 }
 .input:focus + .label {
@@ -119,3 +119,7 @@ body {
   input.invalid {
     border-color: red;
   }
+
+.link {
+  color: #007FFF;
+}

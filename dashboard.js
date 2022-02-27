@@ -18,7 +18,7 @@ function log_in() {
     window.location.href = "login.html";
     return;
 }
-
+    
 function sign_up() {
     var email = document.getElementById("sign_in_email").value;
     var password = document.getElementById("sign_in_password").value;
@@ -43,7 +43,6 @@ function sign_up() {
     window.location.href = "dashboard_unscanned.html";
     return;
 }
-
 
 function add_general_record() {
     var date = document.getElementById("gr_form_1b").value;
@@ -162,3 +161,4 @@ function add_medication_again() {
     document.getElementById("prescribe_medicine_form").style.display = "block";
     document.getElementById("add_medication_form").style.display = "none";
 }
+
